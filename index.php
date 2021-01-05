@@ -148,16 +148,17 @@
                         <li class="nav-item"><a class="nav-link" href="contact-us.php">Contact Us</a></li>
                         <li>
                             <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2 mt-1" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0 mt-2" type="submit">Search</button>
+                                <input class="form-control mr-sm-2 " type="search" name="prods" placeholder="Search" aria-label="Search">
+                                <input type="submit" name="subprodsearch" value="Search" style="width:auto">
                             </form>
                         </li>
                     </ul>
                 </div>
+                
                 <!-- /.navbar-collapse -->
 
                 <!-- Start Atribute Navigation -->
-                <div class="attr-nav">
+                <!-- <div class="attr-nav">
                     <ul>
                         <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
                         <li class="side-menu">
@@ -168,9 +169,12 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
                 <!-- End Atribute Navigation -->
             </div>
+            <?php
+                    require_once "includes/productout.inc.php";
+                ?>
             <!-- Start Side Menu -->
             <div class="side">
                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>

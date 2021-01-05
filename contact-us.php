@@ -411,7 +411,7 @@
                                 <button class="btn hvr-hover" name="newsmail" type="submit">Submit</button>
                             </form>
                             <?php
-                                include "includes/newsletter.inc.php";
+                                include "includes/news.inc.autoload.php";
                             ?>
                         </div>
                     </div>
