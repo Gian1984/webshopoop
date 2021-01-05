@@ -1,3 +1,19 @@
+<?php session_start();
+    
+    $emaill = "";
+    if (isset($_SESSION['emaill'])) {
+        $emaill = $_SESSION['emaill'];
+
+
+        echo'<a href="#" class="badge badge-dark m-2 font-weight-light">Welcome: '.$emaill.' !</a>';
+   
+    }else {
+
+        echo'<a href="#" class="badge badge-dark m-2 font-weight-light">Welcome: user !</a>';
+            
+    }
+ 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,19 +70,13 @@
                     </div>
                     <div class="our-link">
                         <ul>
-                            <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li>
-                            <li><a href="#"><i class="fas fa-location-arrow"></i> Our location</a></li>
-                            <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>
+                            <li><a href="checkout.php"><i class="fa fa-user s_color"></i>  Login/Signup</a></li>
+                            <li><a href="contact-us.php"><i class="fas fa-headset"></i> Contact Us</a></li>
+                            <li><a href="logout.php"><i class="fa fa-user s_color"></i> Logout</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="login-box">
-                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
-							<option>Register Here</option>
-							<option>Sign In</option>
-						</select>
-                    </div>
                     <div class="text-slid-box">
                         <div id="offer-box" class="carouselTicker">
                             <ul class="offer-box">
@@ -251,6 +261,7 @@
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane fade show active" id="grid-view">
                                     <div class="row">
+
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
@@ -268,11 +279,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="why-text">
-                                                    <h4>Lorem ipsum dolor sit amet</h4>
-                                                    <h5> $9.79</h5>
+                                                    <h4>Carrots</h4>
+                                                    <h5> $9.70</h5>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
@@ -290,11 +302,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="why-text">
-                                                    <h4>Lorem ipsum dolor sit amet</h4>
-                                                    <h5> $9.79</h5>
+                                                    <h4>Tomatoes</h4>
+                                                    <h5> $9.70</h5>
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
@@ -312,8 +325,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="why-text">
-                                                    <h4>Lorem ipsum dolor sit amet</h4>
-                                                    <h5> $9.79</h5>
+                                                    <h4>Grapes</h4>
+                                                    <h5> $9.70</h5>
                                                 </div>
                                             </div>
                                         </div>

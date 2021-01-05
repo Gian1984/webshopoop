@@ -1,6 +1,6 @@
 <?php
 
-
+require_once "class-autoload.inc.php";
 
     if (isset($_REQUEST['newsmail'])){
     

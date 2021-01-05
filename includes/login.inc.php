@@ -1,6 +1,7 @@
 <?php
 
-include "class-autoload.inc.php";
+
+require_once "class-autoload.inc.php";
 
     if (isset($_REQUEST['submitl'])){
     
@@ -21,11 +22,12 @@ include "class-autoload.inc.php";
 
                         if (password_verify ($passl, $hashs)){
 
-                            // session_start();
+                            session_start();
                     
-                            // $_SESSION['email'] = $emaill;
+                            $_SESSION['emaill'] = $emaill;
+                            
                                                        
-                            // exit;
+                           
 
                             echo '<div class="container mt-3"> 
                                     <div class="row">
