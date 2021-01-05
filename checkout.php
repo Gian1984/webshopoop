@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <!-- Basic -->
@@ -41,7 +42,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="custom-select-box">
+                    <div class="custom-select-box">
                         <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
 							<option>¥ JPY</option>
 							<option>$ USD</option>
@@ -53,19 +54,19 @@
                     </div>
                     <div class="our-link">
                         <ul>
-                            <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li>
+                            <li><a href="my-account.html"><i class="fa fa-user s_color"></i> My Account</a></li>
                             <li><a href="#"><i class="fas fa-location-arrow"></i> Our location</a></li>
                             <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="login-box">
-						<select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
+                    <div class="login-box">
+                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
 							<option>Register Here</option>
 							<option>Sign In</option>
 						</select>
-					</div>
+                    </div>
                     <div class="text-slid-box">
                         <div id="offer-box" class="carouselTicker">
                             <ul class="offer-box">
@@ -91,7 +92,7 @@
                                     <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT30
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now 
+                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now
                                 </li>
                             </ul>
                         </div>
@@ -112,28 +113,28 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+                    <a class="navbar-brand" href="index.php"><img src="images/logo.png" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
                         <li class="dropdown active">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
                             <ul class="dropdown-menu">
-								<li><a href="shop.html">Sidebar Shop</a></li>
-								<li><a href="shop-detail.html">Shop Detail</a></li>
-                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="shop.php">Sidebar Shop</a></li>
+                                <li><a href="shop-detail.php">Shop Detail</a></li>
+                                <li><a href="cart.php">Cart</a></li>
                                 <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="my-account.html">My Account</a></li>
-                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="my-account.php">My Account</a></li>
+                                <li><a href="wishlist.php">Wishlist</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.php">Contact Us</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -142,11 +143,13 @@
                 <div class="attr-nav">
                     <ul>
                         <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li class="side-menu"><a href="#">
-						<i class="fa fa-shopping-bag"></i>
-                            <span class="badge">3</span>
-							<p>My Cart</p>
-					</a></li>
+                        <li class="side-menu">
+                            <a href="#">
+                                <i class="fa fa-shopping-bag"></i>
+                                <span class="badge">3</span>
+                                <p>My Cart</p>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <!-- End Atribute Navigation -->
@@ -225,14 +228,20 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="InputEmail" class="mb-0">Email Address</label>
-                                <input type="email" class="form-control" id="InputEmail" placeholder="Enter Email"> </div>
+                                <input type="email" class="form-control" name="emaill" id="InputEmail" placeholder="Enter Email"> </div>
                             <div class="form-group col-md-6">
                                 <label for="InputPassword" class="mb-0">Password</label>
-                                <input type="password" class="form-control" id="InputPassword" placeholder="Password"> </div>
+                                <input type="password" class="form-control" name="passl" id="InputPassword" placeholder="Password"> </div>
                         </div>
-                        <button type="submit" class="btn hvr-hover">Login</button>
+                        <button type="submit" name="submitl" class="btn hvr-hover">Login</button>
                     </form>
+                    <?php 
+                        include "includes/login.inc.php"
+                    ?>
                 </div>
+
+                
+
                 <div class="col-sm-6 col-lg-6 mb-3">
                     <div class="title-left">
                         <h3>Create New Account</h3>
@@ -242,21 +251,27 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="InputName" class="mb-0">First Name</label>
-                                <input type="text" class="form-control" id="InputName" placeholder="First Name"> </div>
+                                <input type="text" class="form-control" name="first" id="InputName" placeholder="First Name"> </div>
                             <div class="form-group col-md-6">
                                 <label for="InputLastname" class="mb-0">Last Name</label>
-                                <input type="text" class="form-control" id="InputLastname" placeholder="Last Name"> </div>
+                                <input type="text" class="form-control" name="last" id="InputLastname" placeholder="Last Name"> </div>
                             <div class="form-group col-md-6">
                                 <label for="InputEmail1" class="mb-0">Email Address</label>
-                                <input type="email" class="form-control" id="InputEmail1" placeholder="Enter Email"> </div>
+                                <input type="email" class="form-control" name="email" id="InputEmail1" placeholder="Enter Email"> </div>
                             <div class="form-group col-md-6">
                                 <label for="InputPassword1" class="mb-0">Password</label>
-                                <input type="password" class="form-control" id="InputPassword1" placeholder="Password"> </div>
+                                <input type="password" class="form-control" name="pass" id="InputPassword1" placeholder="Password"> </div>
                         </div>
-                        <button type="submit" class="btn hvr-hover">Register</button>
+                        <button type="submit" name="submit" class="btn hvr-hover">Register</button>
                     </form>
-                </div>
+                    <?php 
+                        include "includes/subscribe.inc.php"
+                    ?>
+                </div>               
             </div>
+
+            
+
             <div class="row">
                 <div class="col-sm-6 col-lg-6 mb-3">
                     <div class="checkout-address">
@@ -567,32 +582,37 @@
     <footer>
         <div class="footer-main">
             <div class="container">
-				<div class="row">
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="footer-top-box">
-							<h3>Business Time</h3>
-							<ul class="list-time">
-								<li>Monday - Friday: 08.00am to 05.00pm</li> <li>Saturday: 10.00am to 08.00pm</li> <li>Sunday: <span>Closed</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="footer-top-box">
-							<h3>Newsletter</h3>
-							<form class="newsletter-box">
-								<div class="form-group">
-									<input class="" type="email" name="Email" placeholder="Email Address*" />
-									<i class="fa fa-envelope"></i>
-								</div>
-								<button class="btn hvr-hover" type="submit">Submit</button>
-							</form>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="footer-top-box">
-							<h3>Social Media</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							<ul>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-top-box">
+                            <h3>Business Time</h3>
+                            <ul class="list-time">
+                                <li>Monday - Friday: 08.00am to 05.00pm</li>
+                                <li>Saturday: 10.00am to 08.00pm</li>
+                                <li>Sunday: <span>Closed</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-top-box">
+                            <h3>Newsletter</h3>
+                            <form class="newsletter-box">
+                                <div class="form-group">
+                                    <input class="" type="email" name="nletter" placeholder="Email Address*" required>
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <button class="btn hvr-hover" name="newsmail" type="submit">Submit</button>
+                            </form>
+                            <?php
+                                include "includes/newsletter.inc.php";
+                            ?>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-top-box">
+                            <h3>Social Media</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <ul>
                                 <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
@@ -601,16 +621,16 @@
                                 <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
                             </ul>
-						</div>
-					</div>
-				</div>
-				<hr>
+                        </div>
+                    </div>
+                </div>
+                <hr>
                 <div class="row">
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-widget">
                             <h4>About Freshshop</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> 							
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12">
