@@ -145,24 +145,17 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact-us.php">Contact Us</a></li>
+                        <li>
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2 " type="search" name="prods" placeholder="Search" aria-label="Search">
+                                <input type="submit" name="subprodsearch" value="Search" style="width:auto">
+                            </form>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
 
-                <!-- Start Atribute Navigation -->
-                <div class="attr-nav">
-                    <ul>
-                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li class="side-menu">
-                            <a href="#">
-                                <i class="fa fa-shopping-bag"></i>
-                                <span class="badge">3</span>
-                                <p>My Cart</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- End Atribute Navigation -->
+
             </div>
             <!-- Start Side Menu -->
             <div class="side">
@@ -193,6 +186,9 @@
             </div>
             <!-- End Side Menu -->
         </nav>
+        <?php
+            require_once "includes/productout.inc.php";
+        ?>
         <!-- End Navigation -->
     </header>
     <!-- End Main Top -->
@@ -275,12 +271,12 @@
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                         </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
                                                     </div>
                                                 </div>
-                                                <div class="why-text">
+                                                <div class="why-text">                                                
                                                     <h4>Carrots</h4>
-                                                    <h5> $9.70</h5>
+                                                    <form method="post"><input type="submit" name="carrots" value="Add to cart" style="width:auto"></form>
+                                                    <h5> $9.70</h5>  
                                                 </div>
                                             </div>
                                         </div>
@@ -298,12 +294,13 @@
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                         </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="why-text">
                                                     <h4>Tomatoes</h4>
-                                                    <h5> $9.70</h5>
+                                                    <form method="post"><input type="submit" name="tomatoes" value="Add to cart" style="width:auto"></form>
+                                                    <h5> $9.70</h5> 
                                                 </div>
                                             </div>
                                         </div>
@@ -321,15 +318,19 @@
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                         </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="why-text">
                                                     <h4>Grapes</h4>
+                                                    <form method="post"><input type="submit" name="grapes" value="Add to cart" style="width:auto"></form>
                                                     <h5> $9.70</h5>
                                                 </div>
                                             </div>
                                         </div>
+                                        <?php
+                                            require_once "includes/addtocart.inc.php";
+                                        ?>  
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">

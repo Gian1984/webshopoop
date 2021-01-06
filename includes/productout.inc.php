@@ -23,8 +23,11 @@ require_once "class-autoload.inc.php";
                     <div class="row">
                     
                     <div class="col">
-                    <div class="alert alert-success text-center" role="alert">
-                       price is '.$price.' $ !
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        The price is '.$price.' $  <a href="shop.php" class="alert-link">go to shop</a> to add the item in to your cart.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     </div>
                     
@@ -37,8 +40,11 @@ require_once "class-autoload.inc.php";
                     <div class="row">
                     
                     <div class="col">
-                    <div class="alert alert-danger text-center" role="alert">
-                       product does not exist!
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        Sorry this product is not avaible  <a href="shop.php" class="alert-link">go to shop</a> to check our product offering.
+                       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     </div>
                     
@@ -54,7 +60,7 @@ require_once "class-autoload.inc.php";
                     
                     <div class="col">
                     <div class="alert alert-danger text-center" role="alert">
-                       is not!
+                       somenthing goes wrong!
                     </div>
                     </div>
                     
