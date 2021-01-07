@@ -136,11 +136,8 @@
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
                             <ul class="dropdown-menu">
                                 <li><a href="shop.php">Sidebar Shop</a></li>
-                                <li><a href="shop-detail.php">Shop Detail</a></li>
-                                <li><a href="cart.php">Cart</a></li>
                                 <li><a href="checkout.php">Checkout</a></li>
                                 <li><a href="my-account.php">My Account</a></li>
-                                <li><a href="wishlist.php">Wishlist</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>

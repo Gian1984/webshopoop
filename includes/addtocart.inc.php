@@ -61,6 +61,7 @@ if (isset($_POST['carrots'])){
                         </div>
                         </div>';
 
+                    
 
                 //   echo '';
 
@@ -105,7 +106,7 @@ if (isset($_POST['carrots'])){
                         </div>
                         </div>';
                   
-                
+                        
 
                 }
 
@@ -242,7 +243,7 @@ if (isset($_POST['tomatoes'])){
                     $tomatoes = 0;
                     $tomatoesprice = 0;
                     $grapes = 1;
-                    $grapesprice = 9.80;
+                    $grapesprice = 9.70;
                     
                     $prodsObj = new ProdsContr();
                     $prodsObj->createCart($emaill, $carrots, $carrotsprice, $tomatoes, $tomatoesprice, $grapes, $grapesprice);
@@ -293,7 +294,7 @@ if (isset($_POST['tomatoes'])){
   
                     
                     $grapes = 1;
-                    $grapesprice = 9.80;
+                    $grapesprice = 9.70;
                     
                     $prodsObj = new ProdsContr();
                     $prodsObj->createGrapes($grapes, $grapesprice, $id);
@@ -338,6 +339,8 @@ if (isset($_POST['tomatoes'])){
   
   
   }
+
+  
 
 
 ?>

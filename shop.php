@@ -136,11 +136,8 @@
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
                             <ul class="dropdown-menu">
                                 <li><a href="shop.php">Sidebar Shop</a></li>
-                                <li><a href="shop-detail.php">Shop Detail</a></li>
-                                <li><a href="cart.php">Cart</a></li>
                                 <li><a href="checkout.php">Checkout</a></li>
                                 <li><a href="my-account.php">My Account</a></li>
-                                <li><a href="wishlist.php">Wishlist</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
@@ -331,11 +328,11 @@
                                         <?php
                                             require_once "includes/addtocart.inc.php";
                                         ?>  
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
                                                     <div class="type-lb">
-                                                        <p class="new">New</p>
+                                                        <p class="sale">Sale</p>
                                                     </div>
                                                     <img src="images/img-pro-01.jpg" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
@@ -344,20 +341,21 @@
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                         </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
                                                     </div>
                                                 </div>
-                                                <div class="why-text">
-                                                    <h4>Lorem ipsum dolor sit amet</h4>
-                                                    <h5> $9.79</h5>
+                                                <div class="why-text">                                                
+                                                    <h4>Carrots</h4>
+                                                    <form method="post"><input type="submit" name="carrots" value="Add to cart" style="width:auto"></form>
+                                                    <h5> $9.70</h5>  
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
                                                     <div class="type-lb">
-                                                        <p class="sale">Sale</p>
+                                                        <p class="new">New</p>
                                                     </div>
                                                     <img src="images/img-pro-02.jpg" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
@@ -366,15 +364,17 @@
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                         </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="why-text">
-                                                    <h4>Lorem ipsum dolor sit amet</h4>
-                                                    <h5> $9.79</h5>
+                                                    <h4>Tomatoes</h4>
+                                                    <form method="post"><input type="submit" name="tomatoes" value="Add to cart" style="width:auto"></form>
+                                                    <h5> $9.70</h5> 
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
@@ -388,15 +388,19 @@
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                         </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="why-text">
-                                                    <h4>Lorem ipsum dolor sit amet</h4>
-                                                    <h5> $9.79</h5>
+                                                    <h4>Grapes</h4>
+                                                    <form method="post"><input type="submit" name="grapes" value="Add to cart" style="width:auto"></form>
+                                                    <h5> $9.70</h5>
                                                 </div>
                                             </div>
                                         </div>
+                                        <?php
+                                            require_once "includes/addtocart.inc.php";
+                                        ?>  
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
@@ -410,20 +414,21 @@
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                         </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
                                                     </div>
                                                 </div>
-                                                <div class="why-text">
-                                                    <h4>Lorem ipsum dolor sit amet</h4>
-                                                    <h5> $9.79</h5>
+                                                <div class="why-text">                                                
+                                                    <h4>Carrots</h4>
+                                                    <form method="post"><input type="submit" name="carrots" value="Add to cart" style="width:auto"></form>
+                                                    <h5> $9.70</h5>  
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
                                                     <div class="type-lb">
-                                                        <p class="sale">Sale</p>
+                                                        <p class="new">New</p>
                                                     </div>
                                                     <img src="images/img-pro-02.jpg" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
@@ -432,20 +437,22 @@
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                         </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="why-text">
-                                                    <h4>Lorem ipsum dolor sit amet</h4>
-                                                    <h5> $9.79</h5>
+                                                    <h4>Tomatoes</h4>
+                                                    <form method="post"><input type="submit" name="tomatoes" value="Add to cart" style="width:auto"></form>
+                                                    <h5> $9.70</h5> 
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
                                                     <div class="type-lb">
-                                                        <p class="new">New</p>
+                                                        <p class="sale">Sale</p>
                                                     </div>
                                                     <img src="images/img-pro-03.jpg" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
@@ -454,12 +461,13 @@
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                                             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                                         </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="why-text">
-                                                    <h4>Lorem ipsum dolor sit amet</h4>
-                                                    <h5> $9.79</h5>
+                                                    <h4>Grapes</h4>
+                                                    <form method="post"><input type="submit" name="grapes" value="Add to cart" style="width:auto"></form>
+                                                    <h5> $9.70</h5>
                                                 </div>
                                             </div>
                                         </div>

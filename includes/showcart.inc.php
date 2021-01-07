@@ -35,7 +35,7 @@ $prodsObj = new ProdsView();
                 <div class="media mb-2 border-bottom">
                     <div class="media-body"> <a href="detail.html">Tomatoes</a>
                     <div class="small text-muted">Price: '.$tomatoesPrice.' <span class="mx-2">|</span> Qty: '.$tomatoes.' <span class="mx-2">|</span> Subtotal: '.$tomatoesPrice.'</div>
-                    <form method="post"><input type="submit" name="tomatoes" value="Remove" style="width:auto"></form>
+                    <form method="post"><input type="submit" onclick="SubmitForm();" name="tomatoes" value="Remove" style="width:auto"></form>
                 </div>
                 </div>
             
@@ -87,7 +87,7 @@ $prodsObj = new ProdsView();
         }
         
 
-        // remove favs
+        // remove product
 
         if (isset($_POST['carrots'])){
   
@@ -128,6 +128,10 @@ $prodsObj = new ProdsView();
             echo'';
         }
 
+        // increment product
+        
+
     
+       
 
 ?>
