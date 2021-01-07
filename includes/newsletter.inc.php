@@ -1,5 +1,7 @@
 <?php
 
+// here we submit the user email to newsletter database
+
 require_once "class-autoload.inc.php";
 
     if (isset($_REQUEST['newsmail'])){

@@ -1,5 +1,6 @@
 <?php
 
+//recover the information of user to insert into database
     
     require_once "class-autoload.inc.php";
 

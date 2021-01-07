@@ -17,13 +17,15 @@ class UsersView extends Users {
     return $results != null;
 	
     }
-    
+
+    //recover if the email exist
     public function email_exist($emaill){
         
         $results = $this->getEmail($emaill);
         return $results[0]['email'];
     }
 
+    //recover the hash of the pass
     public function pass_exist($user){
         
         $results = $this->getEmail($user);
@@ -31,6 +33,8 @@ class UsersView extends Users {
     
     }
 
+
+    //recover the id of the user 
     public function id_recoverUser($user){
         
         $results = $this->getUser($user);
@@ -38,6 +42,7 @@ class UsersView extends Users {
     
     }
 
+    //recover the email to verify if the user are already on the db
     public function news_exist($nletter){
         
         $results = $this->getNews($nletter);

@@ -1,5 +1,7 @@
 <?php
 
+//working on the search of navbar, here query the database to output some information of the products
+// with the 3 product of the shop output a success alert if not that the product is not avaible
 
 require_once "class-autoload.inc.php";
 

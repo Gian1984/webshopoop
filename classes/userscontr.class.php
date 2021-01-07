@@ -22,6 +22,7 @@ class UsersContr extends Users {
         $this->setMessage($names, $email, $subjects, $messages);
     }
 
+    //send the email for inscription to newsletter 
     public function createNews($nletter) {
 
         $this->setNews($nletter);

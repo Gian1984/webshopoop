@@ -1,5 +1,7 @@
 <?php
 
+//here on recover the information by the database to check the log in and start the session of the user 
+
 
 require_once "class-autoload.inc.php";
 

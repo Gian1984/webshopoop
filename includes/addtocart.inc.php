@@ -1,5 +1,7 @@
 <?php
 
+// adding the product to the cart based on the email of the user 
+
 require_once "class-autoload.inc.php";
 
 ini_set('display_errors', 1);

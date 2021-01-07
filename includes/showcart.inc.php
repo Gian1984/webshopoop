@@ -1,6 +1,6 @@
 <?php
 
-// on favourite page echo the favourite categories
+// recover the info by the database to show it in the cart, also part to remove item from the cart
 
 require_once "class-autoload.inc.php";
 

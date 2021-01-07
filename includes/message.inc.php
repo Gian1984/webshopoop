@@ -1,5 +1,7 @@
 <?php
 
+// send the message of the user to the relative database 
+
     require_once "class-autoload.inc.php";
 
     if (isset($_REQUEST['sendmess'])){
